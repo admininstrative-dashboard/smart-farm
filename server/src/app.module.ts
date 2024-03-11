@@ -38,6 +38,22 @@ import { OwnerProductModule } from './owner-products/products.module';
 import { OwnerProduct } from './database/models/owners_products.model'
 import { Product } from './database/models/product.model';
 import { ProductType } from './database/models/product_types.model';
+import { Planting } from './database/models/planting';
+import { Record } from './database/models/records';
+import { PlantingDevice } from './database/models/planting_devices';
+import { Harvest } from './database/models/harvest';
+import { HarvestDevice } from './database/models/harvest_devices';
+import { PrecType } from './database/models/prec_types';
+import { WeatherMetric } from './database/models/weather_metrics';
+import { Cultivation } from './database/models/cultivation';
+import { CultivationDevice } from './database/models/cultivation_devices';
+import { DeviceCalendar } from './database/models/devices_calendar';
+import { WorkerCalendar } from './database/models/workers_calendar';
+import { Revenue } from './database/models/revenue';
+import { ExpenseCategory } from './database/models/expense_categories';
+import { Expense } from './database/models/expense';
+import { FieldCommunity } from './database/models/fields_communities';
+import { PortableDeviceCommunity } from './database/models/portable_devices_communities';
 
 @Module({
   imports: [
@@ -76,7 +92,23 @@ import { ProductType } from './database/models/product_types.model';
         UserPermission,
         Product,
         ProductType,
-        OwnerProduct
+        OwnerProduct,
+        Record,
+        Planting,
+        PlantingDevice,
+        Harvest,
+        HarvestDevice,
+        PrecType,
+        WeatherMetric,
+        Cultivation,
+        CultivationDevice,
+        DeviceCalendar,
+        WorkerCalendar,
+        Revenue,
+        ExpenseCategory,
+        Expense,
+        FieldCommunity,
+        PortableDeviceCommunity
       ],
     }),
     AuthModule,

@@ -9,7 +9,7 @@ import {
 } from 'sequelize-typescript';
 import { ProductType } from './product_types.model';
 import { OwnerProduct } from './owners_products.model';
-
+import { Record } from './records';
 @Table({ tableName: 'products', timestamps: false })
 export class Product extends Model<Product> {
   @Column({ primaryKey: true, autoIncrement: true, allowNull: false })
@@ -30,4 +30,8 @@ export class Product extends Model<Product> {
 
   @HasMany(() => OwnerProduct)
   owners_products: OwnerProduct[];
+
+  @HasMany(() => Record)
+  records: Record;
+
 }
