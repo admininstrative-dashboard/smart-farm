@@ -36,6 +36,18 @@ module.exports = {
       other_factors: {
         type: Sequelize.FLOAT
       },
+      irrigation_hours: {
+        type: Sequelize.INTEGER
+      },
+      fertilizing_hours: {
+        type: Sequelize.INTEGER
+      },
+      device_usage_hours: {
+        type: Sequelize.INTEGER
+      },
+      soil_compaction_hours: {
+        type: Sequelize.INTEGER
+      },
     });
   },
   async down(queryInterface, Sequelize) {
