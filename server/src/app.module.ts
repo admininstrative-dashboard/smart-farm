@@ -110,6 +110,7 @@ import { PortableDeviceCommunity } from './database/models/portable_devices_comm
         FieldCommunity,
         PortableDeviceCommunity
       ],
+      autoLoadModels: true
     }),
     AuthModule,
     OwnerPortableDeviceModule,
